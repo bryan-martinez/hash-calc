@@ -44,40 +44,28 @@ public class HashCalculatorTest {
     @Test
     void test_calculate_MD5() {
         hashCalculator = getCalculator(Hash.MD5.getAlgorithmName());
-
-        String actualHash = TEST_FILE_HASH_MD5;
         String calculatedHash = hashCalculator.calculate(testFile);
-
-        assertEquals(actualHash, calculatedHash);
+        assertEquals(TEST_FILE_HASH_MD5, calculatedHash);
     }
 
     @Test
     void test_calculate_SHA1() {
         hashCalculator = getCalculator(Hash.SHA1.getAlgorithmName());
-
-        String actualHash = TEST_FILE_HASH_SHA1;
         String calculatedHash = hashCalculator.calculate(testFile);
-
-        assertEquals(actualHash, calculatedHash);
+        assertEquals(TEST_FILE_HASH_SHA1, calculatedHash);
     }
 
     @Test
     void test_calculate_SHA256() {
         hashCalculator = getCalculator(Hash.SHA256.getAlgorithmName());
-
-        String actualHash = TEST_FILE_HASH_SHA256;
         String calculatedHash = hashCalculator.calculate(testFile);
-
-        assertEquals(actualHash, calculatedHash);
+        assertEquals(TEST_FILE_HASH_SHA256, calculatedHash);
     }
 
     @Test
     void test_calculate_SHA512() {
         hashCalculator = getCalculator(Hash.SHA512.getAlgorithmName());
-
-        String actualHash = TEST_FILE_HASH_SHA512;
         String calculatedHash = hashCalculator.calculate(testFile);
-
-        assertEquals(actualHash, calculatedHash);
+        assertEquals(TEST_FILE_HASH_SHA512, calculatedHash);
     }
 }
