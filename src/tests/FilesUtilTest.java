@@ -17,8 +17,8 @@ class FilesUtilTest {
 
     @Test
     void test_getFile() {
-        Path file = FilesUtil.getFile(PathResources.EMPTY_TEST_FILE_PATH.getValue());
+        Path file = FilesUtil.getFile(PathResources.EMPTY_TEST_FILE_PATH.getPath());
         assertNotNull(file);
-        assertEquals(PathResources.EMPTY_TEST_FILE_PATH.getValue(), file.toString());
+        assertEquals(PathResources.EMPTY_TEST_FILE_PATH.getPath(), file.toString());
     }
 }

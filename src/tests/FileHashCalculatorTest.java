@@ -29,7 +29,7 @@ class FileFileHashCalculatorTest {
     }
 
     private Path getTestFile() {
-        return FilesUtil.getFile(PathResources.EMPTY_TEST_FILE_PATH.getValue());
+        return FilesUtil.getFile(PathResources.EMPTY_TEST_FILE_PATH.getPath());
     }
 
     private FileHashCalculatorArgs getArgs(HashAlgorithmType hashAlgorithmType) {

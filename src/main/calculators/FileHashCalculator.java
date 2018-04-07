@@ -21,7 +21,7 @@ public class FileHashCalculator extends HashCalculator implements Runnable {
     @Override
     public void run() {
         if (!Files.isDirectory(file)) {
-            // only calculate hash of files (i.e. not directories)
+            // only calculate hash of files
             try {
                 byte[] bytes = Files.readAllBytes(file);
                 this.fileHash = calculate(bytes);

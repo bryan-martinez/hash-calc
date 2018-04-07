@@ -1,11 +1,7 @@
 package main.calculators;
 
 import main.enums.HashAlgorithmType;
-import main.enums.InputType;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
